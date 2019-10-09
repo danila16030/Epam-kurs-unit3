@@ -6,21 +6,10 @@ public class Clock {
     private int second;
 
     public Clock(int hour, int minute, int second) {
-        if (hour < 24) {
-            this.hour = hour;
-        } else {
-            this.hour = 0;
-        }
-        if (minute < 60) {
-            this.minute = minute;
-        } else {
-            this.minute = 0;
-        }
-        if (minute < 60) {
-            this.second = second;
-        } else {
-            this.second = 0;
-        }
+            this.setHour(hour);
+            this.setSecond(second);
+            this.setMinute(minute);
+
     }
 
     public void setHour(int hour) {
